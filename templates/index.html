@@ -1,0 +1,25 @@
+{% extends "layouts/app.html"%} {% load static %} {% block title %}
+<title>Inicio</title>
+{% endblock title %} {% block content %}
+<section class="content">
+  <figure class="profile-image">
+    <img src="{% static 'assets/fotoperfil.png' %}" alt="Foto de Perfil" />
+  </figure>
+  <div>
+    <h1 class="heading-1">Acerca de mi</h1>
+    <h2 class="heading-2">Datos personales</h2>
+    <ul class="info-list Acerca">
+      <li class="info-item">Nombre: Rafael Zarate</li>
+      <li class="info-item">Genero: Masculino</li>
+      <li class="info-item">Edad: 29</li>
+      <li class="info-item">Ocupacion: Estudiante</li>
+    </ul>
+    <h2 class="heading-2">Datos de contacto</h2>
+    <ul class="info-list">
+      <li class="info-item">Telefono: 321 2371030</li>
+      <li class="info-item">Correo: rrzarate4@misena.edu.co</li>
+      <li class="info-item">Ubicacion: Floridablanca/Santander</li>
+    </ul>
+  </div>
+</section>
+{% endblock content %}

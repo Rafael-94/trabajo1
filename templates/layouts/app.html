@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Mi Portada{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}" />
+  </head>
+
+  <body>
+    <header class="header">{% include 'layouts/partials/logo.html' %}</header>
+
+    <nav class="navbar">{% include 'layouts/partials/menu.html' %}</nav>
+
+    <div id="content" class="content">{% block content %}{% endblock %}</div>
+  </body>
+</html>
